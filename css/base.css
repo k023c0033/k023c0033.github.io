@@ -1,0 +1,131 @@
+/* =====================
+   base.css for ホームページ以外（自己紹介・ポートフォリオ・問い合わせなど）
+   ===================== */
+
+/* --- 全体設定 --- */
+body {
+  font-family: 'sans-serif';
+  background-color: #d8ccc0;
+  margin: 0;
+  padding: 40px 20px;
+  color: #333;
+}
+
+
+/* --- ナビゲーションボタン（右上配置） --- */
+.section-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  font-size: 16px;
+  margin-right: 40px;
+  margin-bottom: 8px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: none; /* 長い線を消す */
+}
+
+.section-button a {
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.section-button a:hover {
+  border-bottom: 2px solid #000;
+  color: #444;
+}
+
+.section-button a.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+/* --- 上部ナビ下の短い線（右寄せ） --- */
+.nav-overline {
+  width: 425px;
+  height: 1px;
+  background-color: #000;
+  margin: 10px 40px 30px auto;
+}
+
+/* --- 連絡先前の線（右寄せ） --- */
+.nav-underline {
+  width: 90%;
+  height: 1px;
+  background-color: #000;
+  margin: 40px auto auto auto;
+}
+
+/* --- コンテンツ用コンテナ --- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.main-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* ← 間隔調整 */
+  flex-wrap: wrap; /* ← スマホで折り返す対応 */
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.contact-title {
+  font-size: 24px !important;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #000;
+}
+
+/* --- フッター --- */
+.site-footer {
+  text-align: center;
+  font-size: 12px;
+  color: #444;
+  margin-top: -10px;
+  padding: 20px;
+}
+
+.site-footer .disclaimer {
+  margin-top: 10px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* --- レスポンシブ対応 --- */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .main-title {
+    font-size: 26px;
+  }
+  .section-button {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    gap: 10px;
+  }
+  .nav-overline,
+  .nav-underline {
+    width: 100%;
+    margin-right: 0;
+  }
+}

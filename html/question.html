@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>問い合わせフォーム</title>
+  <link rel="stylesheet" href="../css/question.css">
+  <link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+  <div class="header">
+    <div class="section-button">
+      <a href="index.html">ホーム</a>
+      <a href="profile.html">自己紹介</a>
+      <a href="portfolio.html">ポートフォリオ</a>
+      <a href="question.html" class="active">問い合わせ</a>
+    </div>
+  </div>
+
+  <div class="nav-overline"></div>
+
+  <div class="info">
+    <h2 class="main-title">お問い合わせについて</h2>
+    <p class="intro">
+      本サイトをご覧いただき、誠にありがとうございます。<br>
+      掲載している内容や制作物、またはこれまでの経験・スキルに関するご質問、ご不明点などがございましたら、<br>
+      以下のフォームよりお気軽にお問い合わせください。<br><br>
+      ポートフォリオをご覧いただいたうえでのご意見やご感想、アドバイスなども大変ありがたく受け取らせていただきます。<br>
+      ご連絡いただいた内容には、可能な限り迅速かつ丁寧に対応させていただきます。<br><br>
+      今後とも、どうぞよろしくお願いいたします。
+    </p>
+  </div>
+
+  <div class="container">
+    <section id="contact-form" class="contact-form">
+      <form action="../php/submit.php" method="post">
+        <div class="form-row">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="birth">生年月日</label>
+          <input type="date" id="birth" name="birth" required>
+        </div>
+
+        <div class="form-row">
+          <label for="tel">電話番号</label>
+          <input type="tel" id="tel" name="tel" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="nav-underline"></div>
+
+
+
+  <footer class="site-footer">
+    <p>© 2025 林 桜生. All rights reserved.</p>
+    <p class="disclaimer">
+      本サイトに掲載されている情報および制作物は、すべて個人の学習・就職活動を目的として作成されたものです。<br>
+      内容に関して正確性・最新性を保証するものではなく、閲覧・利用は自己責任でお願いいたします。
+    </p>
+  </footer>
+</body>
+</html>
