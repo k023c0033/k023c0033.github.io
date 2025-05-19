@@ -117,11 +117,20 @@ body {
   .main-title {
     font-size: 26px;
   }
-  .section-button {
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 20px;
-    gap: 10px;
+.section-button {
+    flex-direction: row;          /* 横並びに */
+    flex-wrap: wrap;              /* 折り返し */
+    justify-content: center;      /* 中央揃え */
+    gap: 16px 24px;               /* 横と縦の間隔 */
+    margin: 0 auto 20px auto;     /* 上下中央寄せ */
+  }
+
+  .section-button a {
+    width: 40%;                   /* 2列にする */
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 0;
+    box-sizing: border-box;
   }
   .nav-overline,
   .nav-underline {

@@ -76,7 +76,30 @@ button[type="submit"]:hover {
 
 /* --- レスポンシブ対応 --- */
 @media screen and (max-width: 768px) {
-  .contact-form {
-    padding: 0 20px;
+  .form-wrapper {
+    text-align: center;
+  }
+
+  .form-wrapper label {
+    display: block;
+    width: 100%;
+    text-align: center; /* ✅ ラベル文字を中央に */
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .form-wrapper input,
+  .form-wrapper textarea {
+    width: 90%;               /* ✅ 入力欄を少し狭くする */
+    margin: 0 auto 16px auto; /* ✅ 中央揃え */
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .form-wrapper button {
+    width: fit-content;       /* ✅ ボタン幅を内容に合わせる */
+    padding: 10px 24px;
+    margin: 0 auto;
+    display: block;
   }
 }
