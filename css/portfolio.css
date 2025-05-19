@@ -49,6 +49,30 @@
   margin-top: 8px;
 }
 
+.status-badge {
+  margin: 6px 0 12px 0;
+  text-align: center;
+}
+
+.status {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.status.done {
+  background-color: #a9cbb7;
+  color: #0d3f2f;
+}
+
+.status.wip {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+
 /* レスポンシブ対応 */
 @media screen and (max-width: 768px) {
   .portfolio-list {
